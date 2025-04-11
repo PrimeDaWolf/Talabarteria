@@ -57,7 +57,7 @@ loginForm.addEventListener("submit", function (event) {
     if (user) {
         // Guardar el usuario actual en localStorage
         localStorage.setItem("currentUser", JSON.stringify(user));
-        window.location.href = "HTML/paginaPerfil.html"; // Redirigir a la página de perfil
+        window.location.href = "../../HTML/paginaPerfil.html"; // Redirigir a la página de perfil
     } else {
         errorMessage.textContent = "Correo o contraseña incorrectos.";
         errorMessage.style.display = "block";
