@@ -3,7 +3,7 @@ const solicitarServicioBtn = document.getElementById('solicitarServicio');
 // Agregar un evento al botón
 
 solicitarServicioBtn.addEventListener('click', () => {
-    window.location.href = '/HTML/paginaSolicitud.html'; // Redirigir a un formulario
+    window.location.href = 'HTML/paginaSolicitud.html'; // Redirigir a un formulario
 });
 
 // Validar un formulario

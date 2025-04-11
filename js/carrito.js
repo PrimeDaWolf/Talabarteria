@@ -47,6 +47,6 @@ finalizarCompraBtn.addEventListener('click', () => {
     const cerrarModalBtn = document.getElementById('cerrarModal');
     cerrarModalBtn.addEventListener('click', () => {
         modalGracias.classList.remove('show');
-        window.location.href = '/HTML/paginaEnvios.html'; // Redirigir a la página de productos
+        window.location.href = 'HTML/paginaEnvios.html'; // Redirigir a la página de productos
     });
 });

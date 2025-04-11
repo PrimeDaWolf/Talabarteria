@@ -5,10 +5,10 @@ const loginButton = document.getElementById("loginButton");
 
 // Agregar un evento al botón
 solicitarServicioBtn.addEventListener('click', () => {
-        window.location.href = '/HTML/paginaSolicitud.html'; // Redirigir a un formulario
+        window.location.href = 'HTML/paginaSolicitud.html'; // Redirigir a un formulario
 });
 verProductosBtn.addEventListener('click', () => {
-        window.location.href = '/HTML/paginaProductos.html'; // Redirigir a la página de productos
+        window.location.href = 'HTML/paginaProductos.html'; // Redirigir a la página de productos
 });
 loginButton.addEventListener('click', () => {
     // Verificar si hay un usuario activo en localStorage
@@ -16,10 +16,10 @@ loginButton.addEventListener('click', () => {
 
     if (currentUser) {
         // Si hay un usuario activo, redirigir a la página de perfil
-        window.location.href = "/HTML/paginaPerfil.html";
+        window.location.href = "HTML/paginaPerfil.html";
     } else {
         // Si no hay usuario activo, redirigir a la página de inicio de sesión
-        window.location.href = "/HTML/index.html";
+        window.location.href = "HTML/index.html";
     }
 });
 
@@ -40,7 +40,7 @@ function validarFormulario() {
         return false;
     }
 
-    window.location.href = '/HTML/paginaPrincipal.html';
+    window.location.href = 'HTML/paginaPrincipal.html';
 
     alert('Formulario enviado correctamente.');
     return true;

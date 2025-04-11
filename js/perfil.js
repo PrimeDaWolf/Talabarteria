@@ -7,7 +7,7 @@ const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 if (!currentUser) {
     // Redirigir al login si no hay usuario activo
-    window.location.href = "/HTML/paginaLogIn.html";
+    window.location.href = "HTML/paginaLogIn.html";
 } else {
     // Mostrar los datos del usuario en el formulario
     document.getElementById("profileUsername").value = currentUser.username;
@@ -40,5 +40,5 @@ logoutButton.addEventListener("click", function () {
     localStorage.removeItem("currentUser");
 
     // Redirigir al login
-    window.location.href = "/HTML/index.html";
+    window.location.href = "HTML/index.html";
 });
