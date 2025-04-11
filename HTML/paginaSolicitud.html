@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido</title>
+    <link rel="stylesheet" href="/css/paginaSolicitud.css">
+    <script src="/js/solicitud.js"></script>
+</head>
+<body>
+    <header>
+
+        <div>
+            <a href="/HTML/paginaPrincipal.html"><img src="/img/logo.jpg" alt="Logo" style="border-radius: 50px;"></a>
+        </div>
+        <h1>TALABARTERÍA EL BLOQUE</h1>
+        <input type="text" placeholder="Buscar...">
+
+        <ul class="icon-list">
+            <li><a href="/HTML/paginaEnvios.html"><button type="button"><img src="/icons/notificacion.png" alt="Notificaciones"></button></a></li>   
+            <li><a href="/HTML/paginaCarrito.html"><button type="button"><img src="/icons/carrito.png" alt="Carrito"></button></a></li>
+            <li><a href="/HTML/index.html"><button type="button"><img src="/icons/usuario.png" alt="Login/usuario"></button></a></li>
+        </ul>
+    
+    </header>
+    <div class="container">
+        <div class="form-section">
+            <form onsubmit="return validarFormulario()">
+            <h2>Datos del Pedido</h2>
+            <input type="text" id="nombreProducto" placeholder="Nombre del Producto">
+            <input type="number" id="cantidadProducto" placeholder="Cantidad">
+            <input type="text" id="nombreCliente" placeholder="Nombre del Cliente">
+            <input type="text" id="telefonoCliente" placeholder="Teléfono de Contacto">
+            <input type="text" id="direccionCliente" placeholder="Dirección de Entrega">
+        </div>
+        <div class="description-section">
+            <h2>Detalles del Pedido</h2>
+            <p><!-- Placeholder para el texto de Lorem Ipsum --></p>
+            <button id="solicitarServicio" type="submit" class="submit-btn">Solicitar Producto</button>
+            <p class="error-message" id="errorMessage"></p>
+
+        </div>
+    </form>
+    </div>
+</body>
+</html>

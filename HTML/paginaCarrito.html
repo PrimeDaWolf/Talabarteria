@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="/css/paginaCarrito.css">
+    <script src="/js/carrito.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/HTML/paginaPrincipal.html"><img src="/img/logo.jpg" alt="Logo" style="border-radius: 50px;"></a>
+        </div>
+        <h1>TALABARTERÍA EL BLOQUE</h1>
+
+        <ul class="icon-list">
+            <li><button type="button"><img src="/icons/notificacion.png" alt="Notificaciones"></button></li>   
+            <li><a href="/HTML/paginaCarrito.html"><button type="button"><img src="/icons/carrito.png" alt="Carrito"></button></a></li>
+            <li><a href="/HTML/index.html"><button type="button"><img src="/icons/usuario.png" alt="Login/usuario"></button></a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Carrito de Compras</h1> 
+        <div id="carrito">
+            <h2>Productos en el Carrito</h2>
+            <ul id="listaCarrito">
+                <!-- Los productos se agregarán aquí dinámicamente -->
+            </ul>
+        </div>
+        <button id="finalizarCompra">Finalizar Compra</button>
+    </main>
+
+    <!-- Ventana Modal -->
+    <div id="modalGracias" class="modal hidden">
+        <div class="modal-content">
+            <h2>¡Gracias por tu compra!</h2>
+            <p>Tu pedido ha sido procesado con éxito.</p>
+            <button id="cerrarModal">Cerrar</button>
+        </div>
+    </div>
+</body>
+</html>
