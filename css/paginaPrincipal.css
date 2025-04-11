@@ -1,0 +1,109 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(227, 120, 49);
+}
+
+header {
+    background-color: rgb(227, 120, 49);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+
+.icon-list {
+    list-style: none;
+    display: flex;
+    gap: 80%;
+    margin-right: 150px;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.icon-list li {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-list button{
+    background: none;
+    border-style: none;
+}
+
+.banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/img/mainBG.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    gap: 20px; /* Espaciado entre los botones */
+    position: absolute;
+    bottom: 20px;
+}
+
+.button-container button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.button-container button:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.section img {
+    width: 100%;
+    max-width: 234px;
+    height: auto;
+}
+.section div {
+    width: 48%;
+}
+.section-reviews {
+    display: flex;
+    align-items: center;
+}
+.section-reviews img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.banner{
+
+    img {max-height: 100%;
+        min-width: 95%;
+    }
+}
