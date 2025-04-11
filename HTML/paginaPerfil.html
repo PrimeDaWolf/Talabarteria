@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../css/paginaPerfil.css">
+    <script src="../js/perfil.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../HTML/paginaPrincipal.html"><img src="../img/logo.jpg" alt="Logo" style="border-radius: 50px;"></a>
+        </div>
+        <h1>TALABARTERÍA EL BLOQUE</h1>
+
+        <ul class="icon-list">
+            <li><a href="../HTML/paginaEnvios.html"><button type="button"><img src="../icons/notificacion.png" alt="Notificaciones"></button></a></li>   
+            <li><a href="../HTML/paginaCarrito.html"><button type="button"><img src="../icons/carrito.png" alt="Carrito"></button></a></li>
+            <li><a href="../HTML/index.html"><button type="button"><img src="../icons/usuario.png" alt="Login/usuario"></button></a></li>
+        </ul>
+
+    </header>
+    <main>
+        <form id="profileForm">
+            <h2>Editar Perfil</h2>
+            <br>
+            <h4>Nombre</h4 >
+            <input type="text" id="profileUsername" placeholder="Nombre de Usuario">
+            <h4>Email</h4>
+            <input type="email" id="profileEmail" placeholder="Correo Electrónico" disabled>
+            <h4>Direccion</h4>
+            <input type="text" id="profileAddress" placeholder="Dirección">
+            <button type="submit" class="btn">Guardar Cambios</button>
+            <button id="logoutButton" class="btn">Cerrar Sesión</button>
+
+        </form>
+    </main>
+</body>
+</html>

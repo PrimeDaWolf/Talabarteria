@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talabartería El Bloque</title>
+    <link rel="stylesheet" href="../css/paginaProductos.css">
+    <script src="../js/productos.js" defer></script>
+
+</head>
+    <header>
+        <div>
+            <a href="../HTML/paginaPrincipal.html"><img src="../img/logo.jpg" alt="Logo" style="border-radius: 50px;"></a>
+        </div>
+        <h1>TALABARTERÍA EL BLOQUE</h1>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+        <ul class="icon-list">
+            <li><a href="../HTML/paginaEnvios.html"><button type="button"><img src="../icons/notificacion.png" alt="Notificaciones"></button></a></li>   
+            <li><a href="../HTML/paginaCarrito.html"><button type="button"><img src="../icons/carrito.png" alt="Carrito"></button></a></li>
+            <li><a href="../HTML/index.html"><button type="button"><img src="../icons/usuario.png" alt="Login/usuario"></button></a></li>
+        </ul>
+    </header>
+    <div style="display: flex;">
+    <aside class="sidebar">
+        <ul>
+            <li>Monturas</li>
+            <li>Muebles</li>
+            <li>Ropa</li>
+            <li>Botes</li>
+            <li>Feria de la talabartería</li>
+            <li>Fiestas de la Candelaria</li>
+        </ul>
+        <h3>Rango de Precios</h3>
+        <ul>
+            <li>Hasta $500</li>
+            <li>$500 a $1000</li>
+            <li>$1000 a $2500</li>
+            <li>$2500+</li>
+        </ul>
+    </aside>
+    <main class="main">
+        <div class="section">
+            <h2>Ofertas</h2>
+            <div class="product">
+                <img src="oferta1_placeholder.png" alt="Producto en Oferta">
+                <div class="product-details">
+                    <p>Producto 1</p>
+                    <p>$1234</p>
+                    <button class="btn-comprar" data-product="Producto 1 - $1234">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="oferta2_placeholder.png" alt="Producto en Oferta">
+                <div class="product-details">
+                    <p>Producto 2</p>
+                    <p>$1234</p>
+                    <button class="btn-comprar" data-product="Producto 2 - $1234">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Otras Recomendaciones</h2>
+            <div class="product">
+                <img src="oferta3_placeholder.png" alt="Producto en Oferta">
+                <div class="product-details">
+                    <p>Producto 3</p>
+                    <p>$1234</p>
+                    <button class="btn-comprar" data-product="Producto 3 - $1234">Comprar</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="oferta4_placeholder.png" alt="Producto en Oferta">
+                <div class="product-details">
+                    <p>Producto 4</p>
+                    <p>$1234</p>
+                    <button class="btn-comprar" data-product="Producto 4 - $1234">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ventana Modal -->
+<div id="modalProducto" class="modal hidden">
+    <div class="modal-content">
+        <h2>Producto agregado al carrito</h2>
+        <p id="productoAgregado"></p>
+        <button id="cerrarModal">Cerrar</button>
+    </div>
+</div>
+    </main>
+</body>
+</html>
